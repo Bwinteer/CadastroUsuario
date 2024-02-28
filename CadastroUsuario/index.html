@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- O caminho abaixo é para a biblioteca Font Awesome, que é uma biblioteca de ícones popular -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Novo usuario - Sujeito Programador</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="cadastroPessoa">
+                <h1>Nova Conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use seu email e senha para cadastro</span>
+                <input type="text" id="nomeCadastro" placeholder="Nome"> 
+                <input type="date" id="dataNascimentoCadastro" placeholder="Data de nascimento">
+                <input type="email" id="emailCadastro" placeholder="E-mail">
+                <input type="password" id="senhaCadastro" placeholder="Senha">
+                <input type="password" id="confirmaSenhaCadastro" placeholder="Confirmar Senha">
+                <button onclick="RegisterValidator()" id="registerButton">Cadastro</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form id="loginPessoa">
+                <h1>Login</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use seu email e senha</span>
+                <input type="email" id="emailLogin" placeholder="E-mail">
+                <input type="password" id="senhaLogin" placeholder="Senha">
+                <a href="#">Esqueceu sua senha?</a>
+                <button onclick="LoginValidator()" id="loginButton">Entrar</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <img src="img/Discord Avatar.svg" alt="Avatar" class="avatar">
+                    <h1>Já possui cadastro?</h1>
+                    <p>Insira suas informações de login para utilizar as funcionalidades do site</p>
+                    <button class="hidden" id="login">Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <img src="img/Discord Avatar.svg" alt="Avatar" class="avatar">
+                    <h1>Faça parte da comunidade!</h1>
+                    <button class="hidden" id="register">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
